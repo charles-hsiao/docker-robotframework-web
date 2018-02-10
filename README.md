@@ -10,9 +10,17 @@
 
 ## Get Started
 
-Run docker with robotframwork CLI command with specific ${RF_TAG}
+Run robotframwork CLI command with no robotframework tag
+
+      $ docker run --rm                                  \
+        -v ${PATH}/rf-scripts:/rf-scripts                \
+        -it charleshsiao/robotframework-web              \
+        robot /rf-scripts
+
+Run robotframwork CLI command with specific robotframework tag ${RF_TAG}
 
       $ docker run --rm                                  \
         -v ${PATH}/rf-scripts:/rf-scripts                \
         -it charleshsiao/robotframework-web              \
         robot -i ${RF_TAG} /rf-scripts
+
