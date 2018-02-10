@@ -11,6 +11,7 @@
 ## Get Started
 
 Run docker with robotframwork CLI command with specific ${RF_TAG}
+
       $ docker run --rm                                  \
         -v ${PATH}/rf-scripts:/rf-scripts                \
         -it charleshsiao/robotframework-web              \
